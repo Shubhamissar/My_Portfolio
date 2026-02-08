@@ -1,428 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Shubham Portfolio</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+<head>
+  <title>Shubham Issar | Frontend Developer</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/aos.css">
-
-    <link rel="stylesheet" href="css/ionicons.min.css">
-    
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
-
-
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/style.css">
 
 <style>
-
-/*======================================
-//--//-->   ABOUT
-======================================*/
-
-.about-mf .box-shadow-full {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+/* RESET TEMPLATE SIDE EFFECTS */
+* {
+  box-sizing: border-box;
 }
 
-.about-mf .about-img {
-  margin-bottom: 2rem;
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #111;
+  color: #fff;
 }
 
-.about-mf .about-img img {
-  margin-left: 10px;
+/* REMOVE ALL TEMPLATE HERO TEXT LAYERS */
+.hero-wrap *::before,
+.hero-wrap *::after {
+  content: none !important;
+  display: none !important;
 }
 
-
-.skill-mf .progress {
-  /* background-color: #cde1f8; */
-  margin: .5rem 0 1.2rem 0;
-  border-radius: 0;
-  height: .7rem;
+/* NAVBAR (SEPARATE & FIXED) */
+.navbar {
+  background: rgba(0,0,0,0.85);
+  padding: 15px 0;
 }
 
-.skill-mf .progress .progress-bar {
-  height: .7rem;
-  background-color: #ffbd39;
+.navbar-brand {
+  font-weight: 700;
+  font-size: 22px;
+  color: #ffbd39 !important;
 }
 
+.nav-link {
+  color: #fff !important;
+  margin-left: 20px;
+}
 
-/* Animation styles */
-#typing-animation {
+/* HERO SECTION (CLEAN) */
+.hero-wrap {
+  min-height: 100vh;
+  background: url("images/bg_1.jpg") center/cover no-repeat;
   position: relative;
-  font-size: 30px;
-  font-weight: bold;
-  color: rgb(255, 255, 255);
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typing 3s steps(20, end) infinite;
+  display: flex;
+  align-items: center;
 }
 
-#typing-animation:before {
-  content: "";
-  /* position: absolute; */
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background-color: #ccc;
-  animation: typing-cursor 0.5s ease-in-out infinite;
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
 }
 
-@keyframes typing {
-  from {
-    width: 0;
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.hero-content h1 span {
+  color: #ffbd39;
+}
+
+.hero-content h4 {
+  margin: 15px 0;
+  font-weight: 400;
+}
+
+.hero-content p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.btn-primary {
+  background: #ffbd39;
+  border: none;
+  color: #000;
+}
+
+.btn-outline-light {
+  border-color: #fff;
+}
+
+/* SECTIONS */
+.section {
+  padding: 100px 0;
+}
+
+/* SKILLS */
+.skill-badge {
+  background: #222;
+  padding: 8px 14px;
+  border-radius: 20px;
+  margin: 6px;
+  display: inline-block;
+  font-size: 14px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 32px;
   }
-  to {
-    width: 100%;
+
+  .hero-content {
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .nav-link {
+    margin-left: 0;
   }
 }
-
-@keyframes typing-cursor {
-  from {
-    width: 5px;
-  }
-  to {
-    width: 0;
-  }
-}
-
-
-/* project image zoom effect */
-
-.zoom-effect {
-  overflow: hidden;
-  transition: transform 0.3s ease-out;
-}
-
-.zoom-effect:hover {
-  transform: scale(1.1);
-}
-
-
 </style>
+</head>
 
+<body>
 
-  </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-	  
-	  
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Shubham</a>
-	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
+<!-- NAVBAR (ONLY BRAND NAME HERE) -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#home">Shubham</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav">
+      <span class="oi oi-menu"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav nav ml-auto">
-	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-	          <li class="nav-item"><a href="#education-section" class="nav-link"><span>Education</span></a></li>
-	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
-	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
-	  <section id="home-section" class="hero">
-		  <div class="home-slider  owl-carousel">
-	       <div class="slider-item ">
-	      	<div class="overlay"></div>
-	         <div class="container">
-	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/Shubham_Pic.jpg);">
-	          	 <div class="overlay"></div>
-	          	</div>
-		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-		          	<div class="text">
-		          		<span class="subheading">Hello!</span>
-			            <h1 class="mb-4 mt-3">I'm <span>Shubham</span></h1>
+<!-- HERO (ONLY INTRO TEXT HERE) -->
+<section id="home" class="hero-wrap">
+  <div class="hero-overlay"></div>
+  <div class="container hero-content">
+    <h1>Hi, I'm <span>Shubham</span></h1>
+    <h4>Frontend Developer • Software Developer</h4>
+    <p>
+      Frontend Developer passionate about building fast, responsive, and
+      visually engaging web applications using modern technologies.
+    </p>
+    <a href="#projects" class="btn btn-primary px-4 py-3 mr-2">View Projects</a>
+    <a href="assets/Shubham.pdf"
+       target="_blank"
+       class="btn btn-outline-light px-4 py-3">Download Resume</a>
+  </div>
+</section>
 
-						<!-- Element to contain animated typing -->
-						<span id="typing-animation"></span>
+<!-- ABOUT + SKILLS -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>About Me</h2>
+        <p>
+          I am a Computer Science graduate from Narula Institute of Technology
+          with a strong interest in frontend development and software engineering.
+        </p>
+        <p>
+          I enjoy converting ideas into real-world applications and continuously
+          improving my skills through hands-on projects and self-learning.
+        </p>
+      </div>
 
-						<script>
+      <div class="col-md-6">
+        <h2>Skills</h2>
+        <span class="skill-badge">HTML</span>
+        <span class="skill-badge">CSS</span>
+        <span class="skill-badge">JavaScript</span>
+        <span class="skill-badge">Bootstrap</span>
+        <span class="skill-badge">Java</span>
+        <span class="skill-badge">SQL</span>
+        <span class="skill-badge">Git</span>
+        <span class="skill-badge">GitHub</span>
+        <span class="skill-badge">Responsive Design</span>
+        <span class="skill-badge">REST APIs</span>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- PROJECTS -->
+<section id="projects" class="ftco-section bg-light">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">Projects</h2>
 
-						// Initialize the typing animation
-						const typingAnimationElement = document.getElementById('typing-animation');
+    <div class="row">
+      <div class="col-md-4 project-card" data-aos="zoom-in">
+        <img src="images/website-blog.jpg" class="img-fluid mb-3" alt="Blog Website">
+        <h4>Blog Website</h4>
+        <p>Responsive blog platform built using HTML, CSS, and JavaScript.</p>
+        <a href="https://github.com/Shubhamissar/blogwebsite" target="_blank">GitHub →</a>
+      </div>
 
-						// Create an array of typing text
-						const typingTexts = [
-						'Frontend Engineer  ',
-						'Software Developer  ',
-						];
+      <div class="col-md-4 project-card" data-aos="zoom-in">
+        <img src="images/download.png" class="img-fluid mb-3" alt="Tic Tac Toe">
+        <h4>Tic Tac Toe Game</h4>
+        <p>Java console-based game implementing core programming logic.</p>
+        <a href="https://github.com/Shubhamissar/TICTACTOE" target="_blank">GitHub →</a>
+      </div>
 
-						// Create a function to display the typing animation for a given text
-						function playTypingAnimation(text) {
-						// Loop through each character and add it to the element
-						for (let i = 0; i < text.length; i++) {
-							setTimeout(() => {
-							typingAnimationElement.textContent += text[i];
-							}, i * 200); // Increase the delay to slow down the typing animation
-						}	
+      <div class="col-md-4 project-card" data-aos="zoom-in">
+        <img src="images/portfolio.jpg" class="img-fluid mb-3" alt="Portfolio">
+        <h4>Personal Portfolio</h4>
+        <p>Modern responsive portfolio website to showcase projects and skills.</p>
+        <a href="https://github.com/Shubhamissar/My_Portfolio" target="_blank">GitHub →</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-						// Once the animation is complete, reset the text and start over
-						setTimeout(() => {
-							typingAnimationElement.textContent = '';
-							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-						}, text.length * 200);
-						}
+<!-- EDUCATION -->
+<section id="education" class="ftco-section">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">Education</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-8" data-aos="fade-up">
+        <ul>
+          <li><strong>B.Tech (CSE)</strong> – Narula Institute of Technology (CGPA: 7.91)</li>
+          <li><strong>12th</strong> – St. Joseph's Public School (61.6%)</li>
+          <li><strong>10th</strong> – St. Joseph's Public School (71%)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 
-						// Start the typing animation loop
-						playTypingAnimation(typingTexts[0]);
+<!-- CONTACT -->
+<section id="contact" class="ftco-section bg-dark text-light">
+  <div class="container text-center" data-aos="fade-up">
+    <h2 class="section-title mb-4">Contact Me</h2>
+    <p>Email: <a href="mailto:sissar99@gmail.com">sissar99@gmail.com</a></p>
+    <p>Phone: <a href="tel:+917004091929">+91 7004091929</a></p>
+    <p>
+      <a href="https://github.com/Shubhamissar" target="_blank" class="btn btn-primary px-4 py-2">GitHub</a>
+      <a href="https://www.linkedin.com/in/shubham-919089258/" target="_blank" class="btn btn-outline-light px-4 py-2 ml-2">LinkedIn</a>
+    </p>
+  </div>
+</section>
 
-						</script>
+<!-- JS -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
 
-						<br>
-						<br>
-			            <h4>I am a passionate software developer with a strong foundation in creating efficient, user-friendly applications.</h4>
-		            </div>
-		          </div>
-	        	</div>
-	        </div>
-	      </div>
-		</div>
-    </section>
+<button id="themeToggle" class="btn btn-sm btn-outline-light ml-3">
+  🌙
+</button>
 
+<script>
+const toggle = document.getElementById("themeToggle");
 
+toggle.addEventListener("click", () => {
+  document.body.classList.toggle("light-mode");
+  toggle.textContent =
+    document.body.classList.contains("light-mode") ? "🌞" : "🌙";
+});
+</script>
 
-    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
-    	<div class="container">
-			<div class="row">
-				<div class="row d-flex align-items-stretch">
-				
-					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-						<div class="row justify-content-start pb-3">
-							<div class="col-md-12 heading-section ftco-animate">
-								
-								<h1 class="big">About</h1>
-								<h2 class="mb-4">About Me</h2>
-								
-								<p>Hello! I’m Shubham, a recent graduate with a degree in Computer Science and Engineering from Narula Institute of Technology.
-									I’m excited to begin my journey as a software developer, front-end developer and apply the skills I’ve gained through my studies and projects.
-									During my time at college, I developed a strong foundation in HTML, CSS, JavaScript, SQL.
-									I completed several projects, including Blog Website, Tic Tac Toe, which helped me hone my problem-solving abilities and attention to detail.</p>
-								<ul class="about-info mt-4 px-md-0 px-2">
-									<li class="d-flex"><span>Education:</span> <span>Bachelor of Technology</span></li>
-									<li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
-									<li class="d-flex"><span>Skills:</span> <span>C, Java, Html, Css, Javascript,Sql</span></li>
-									<li class="d-flex"><span>Interest:</span> <span>Traveling, Playing Cricket and Kabbadi</span></li>
-								</ul>
-							</div>
-						</div>
-
-
-						<div class="counter-wrap ftco-animate d-flex mt-md-3">
-							<div class="text">
-								<p><a href="https://www.linkedin.com/in/shubham-%E2%80%94-919089258/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-    </section>
-
-
-
-	
-    <section class="ftco-section ftco-no-pb" id="Education-section">
-    	<div class="container">
-    		<div class="row justify-content-center pb-5">
-				<div class="col-md-10 heading-section text-center ftco-animate">
-					<h1 class="big big-2">Education</h1>
-					<h2 class="mb-4">Education</h2>
-				</div>
-			</div>
-		
-			<div class="row">
-    			<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-						<span class="date">2017-2018</span>
-						<h2>Secondary School</h2>
-						<span class="position">ST. Joseph's Public School</span>
-						<p class="mt-4">Grade: 71%</p>
-    				</div>
-    			</div>
-
-    			<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">2018-2020</span>
-    					<h2>Higher Secondary School</h2>
-    					<span class="position">ST. Joseph's Public School</span>
-    					<p class="mt-4">Grade: 61.6%</p>
-    				</div>
-				</div>
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">2020-2024</span>
-    					<h2>Bachelor of Technology</h2>
-						<h4>Computer Science and Engineering</h4>
-    					<span class="position">Narula Institute of Technology</span>
-    					<p class="mt-4">Grade: 7.91 CGPA</p>
-					</div>
-				</div>
-			</div>
-		</div>
-    </section>
-
-   
-
-    <section class="ftco-section" id="project-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-5">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Projects</h1>
-            <h2 class="mb-4">Projects</h2>
-          </div>
-        </div>
-        <div class="row d-flex">
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/Shubhamissar/blogwebsite" class="block-20 zoom-effect" style="background-image: url('images/website-blog.jpg');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-
-                <h3 class="heading"><a href="https://github.com/Shubhamissar/blogwebsite">Blog Website</a></h3>
-                <p>A blog website is an online platform where individuals or groups share articles and insights on various topics, ranging from personal experiences to industry news.
-					It typically features a collection of posts organized by categories and tags for easy navigation.
-					Readers can engage with the content through comments, fostering community interaction.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/Shubhamissar/TICTACTOE" class="block-20 zoom-effect" style="background-image: url('images/download.png');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-
-                <h3 class="heading"><a href="https://github.com/Shubhamissar/TICTACTOE">Tic Tac Toe Game</a></h3>
-                <p>The Tic-Tac-Toe game in Java is a console-based application that allows two players to compete on a 3x3 grid by taking turns placing their markers (X and O).
-					The game utilizes a 2D array to represent the board's state and includes logic to handle player input, ensuring only valid moves are accepted.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry">
-              <a href="https://github.com/Shubhamissar/Portfolio/blob/main/Portfolio-Website-Template-main/Portfolio-Website-Template-main/index.html" class="block-20 zoom-effect" style="background-image: url('images/portfolio.jpg');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-
-                <h3 class="heading"><a href="https://github.com/Shubhamissar/Portfolio/blob/main/Portfolio-Website-Template-main/Portfolio-Website-Template-main/index.html">Portfolio</a></h3>
-                <p>My portfolio, built using HTML and CSS, showcases my journey as a developer through a visually appealing and user-friendly design.
-					It features a collection of projects that highlight my skills in web development, including responsive layouts and engaging user interfaces.
-					Each project is presented with detailed descriptions, outlining the technologies used and the challenges I overcame during development.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-	</div>
-	</section>	
-
-	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
-	
-	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
-			<!-- <div class="container"> -->
-				<div class="row justify-content-center">
-					<div class="col-md-7 ftco-animate text-center">
-						<h2>More projects on<span> Github  </span> </h2>
-						<div class="heading"> <h4> I love to solve business problems &amp; uncover hidden data stories </h4>
-						<br>
-						<p><a href="https://github.com/Shubhamissar" class="btn btn-primary py-3 px-5">GitHub</a></p>
-						</div>
-					</div>
-				</div>
-			<!-- </div> -->
-		</div>
-	</section>
-
-
-
-    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
-      <div class="container">
-      	<div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Contact</h1>
-            <h2 class="mb-4">Contact Me</h2>
-            <p>Below are the details to reach out to me!</p>
-          </div>
-        </div>
-
-        <div class="row d-flex contact-info mb-5">
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-map-signs"></span>
-          		</div>
-          		<h3 class="mb-4">Address</h3>
-	            <p>Konaila,
-				   Dalsingsarai,
-				   Samastipur,
-				   Bihar
-				   (848114)
-				</p>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-phone2"></span>
-          		</div>
-          		<h3 class="mb-4">Contact Number</h3>
-	            <p><a href="tel://0101010101">+91 7004091929</a></p>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-paper-plane"></span>
-          		</div>
-          		<h3 class="mb-4">Email Address</h3>
-	            <p><a href="mailto:info@yoursite.com">sissar99@gmail.com</a></p>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-globe"></span>
-          		</div>
-          		<h3 class="mb-4">Download Resume</h3>
-	            <p><a href="https://drive.google.com/file/d/12caPPAGszoWsFOOHp-ascs4LmcxJzPAl/view?usp=drive_link">Resume link</a></p>
-	          </div>
-          </div>
-		</div>
-	</div>
- </section>
-
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-
-
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/scrollax.min.js"></script>
-  
-  <script src="js/main.js"></script>
-    
-  </body>
+</body>
 </html>
