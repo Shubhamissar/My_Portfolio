@@ -9024,6 +9024,32 @@ h1, h2, h3, h4, h5,
   .project:hover .text, .project:focus .text {
     opacity: 1; }
 
+/* EDUCATION SECTION */
+.edu-card {
+  background: #1c1c1c;
+  padding: 30px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  border-left: 4px solid #ffbd39;
+}
+
+.edu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(255, 189, 57, 0.2);
+}
+
+.edu-card h4 {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.edu-place {
+  color: #ffbd39;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+
 .aside-stretch {
   background: #ffce6c; }
   .aside-stretch:after {
