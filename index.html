@@ -164,6 +164,37 @@ body {
     padding: 40px 0 !important;
   }
 }
+
+.proj-link {
+  display: inline-block;
+  margin-right: 10px;
+  color: #ffbd39;
+}
+
+/* SECTION COLOURS */
+#about {
+  background: #1a1a2e !important;
+}
+
+#projects {
+  background: #16302b !important;
+}
+
+#education {
+  background: #2d1b3d !important;
+}
+
+#contact {
+  background: #3a1f1f !important;
+  color: #fff;
+}
+
+.project-card,
+.edu-card {
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 12px;
+  padding: 20px;
+}
 </style>
 </head>
 
@@ -244,26 +275,37 @@ body {
     <h2 class="section-title text-center mb-5">Projects</h2>
 
     <div class="row">
-      <div class="col-md-4 project-card" data-aos="zoom-in">
+      <div class="col-md-4 project-card mb-4" data-aos="zoom-in">
         <img src="images/website-blog.jpg" class="img-fluid mb-3" alt="Blog Website">
         <h4>Blog Website</h4>
         <p>Responsive blog platform built using HTML, CSS, and JavaScript.</p>
-        <a href="https://github.com/Shubhamissar/blogwebsite" target="_blank">GitHub →</a>
+        <a href="https://github.com/Shubhamissar/blogwebsite" target="_blank" class="proj-link">GitHub →</a>
+        <a href="https://blogwebsite-seven-ochre.vercel.app/" target="_blank" class="proj-link">Live Demo →</a>
       </div>
 
-      <div class="col-md-4 project-card" data-aos="zoom-in">
-        <img src="images/download.png" class="img-fluid mb-3" alt="Tic Tac Toe">
-        <h4>Tic Tac Toe Game</h4>
-        <p>Java console-based game implementing core programming logic.</p>
-        <a href="https://github.com/Shubhamissar/TICTACTOE" target="_blank">GitHub →</a>
+      <div class="col-md-4 project-card mb-4" data-aos="zoom-in">
+        <img src="images\Weather-image.png" class="img-fluid mb-3" alt="Weather App">
+        <h4>Weather App</h4>
+        <p>Weather application that shows current conditions for any city using a weather API.</p>
+        <a href="https://github.com/Shubhamissar/WEATHERAPPLICATION" target="_blank" class="proj-link">GitHub →</a>
+        <a href="https://shubhamissar.github.io/WEATHERAPPLICATION/" target="_blank" class="proj-link">Live Demo →</a>
       </div>
 
-      <div class="col-md-4 project-card" data-aos="zoom-in">
+      <div class="col-md-4 project-card mb-4" data-aos="zoom-in">
         <img src="images/portfolio.jpg" class="img-fluid mb-3" alt="Portfolio">
         <h4>Personal Portfolio</h4>
         <p>Modern responsive portfolio website to showcase projects and skills.</p>
-        <a href="https://github.com/Shubhamissar/My_Portfolio" target="_blank">GitHub →</a>
+        <a href="https://github.com/Shubhamissar/My_Portfolio" target="_blank" class="proj-link">GitHub →</a>
+        <a href="https://shubhamissar.github.io/My_Portfolio/" target="_blank" class="proj-link">Live Demo →</a>
       </div>
+
+      <div class="col-md-4 project-card mb-4" data-aos="zoom-in">
+        <img src="images/download.png" class="img-fluid mb-3" alt="Tic Tac Toe">
+        <h4>Tic Tac Toe Game</h4>
+        <p>Java console-based game implementing core programming logic.</p>
+        <a href="https://github.com/Shubhamissar/TICTACTOE" target="_blank" class="proj-link">GitHub →</a>
+      </div>
+
     </div>
   </div>
 </section>
