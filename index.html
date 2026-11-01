@@ -130,6 +130,40 @@ body {
     margin-left: 0;
   }
 }
+
+/* TIGHTEN SECTION SPACING */
+#projects,
+#education,
+#contact {
+  padding: 60px 0 !important;
+}
+
+#projects h2,
+#education h2 {
+  margin-bottom: 30px !important;
+}
+
+#education .edu-card {
+  margin-bottom: 0;
+}
+
+#education .col-md-8 {
+  margin-bottom: 16px !important;
+}
+
+/* PROJECTS: dark background so white text is readable */
+#projects {
+  background: #111 !important;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  #projects,
+  #education,
+  #contact {
+    padding: 40px 0 !important;
+  }
+}
 </style>
 </head>
 
@@ -203,6 +237,7 @@ body {
     </div>
   </div>
 </section>
+
 <!-- PROJECTS -->
 <section id="projects" class="ftco-section bg-light">
   <div class="container">
@@ -232,7 +267,6 @@ body {
     </div>
   </div>
 </section>
-
 
 <!-- EDUCATION -->
 <section id="education" class="section">
@@ -271,7 +305,6 @@ body {
     </div>
   </div>
 </section>
-
 
 <!-- CONTACT -->
 <section id="contact" class="ftco-section bg-dark text-light">
